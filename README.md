@@ -14,8 +14,8 @@ AthletesAge.ipynb: The main script for data preprocessing, model training, and e
 
 
 Libraries Used
-pandas,
-scikit-learn,
+pandas ,
+scikit-learn ,
 xgboost
 
 
@@ -24,11 +24,11 @@ xgboost
 
 STEPS
 1. Data Preprocessing
-Load the dataset and drop rows with missing values.
-Extract relevant features (First Half, Second Half, Gender) and the target variable (Age).
-Apply transformations using ColumnTransformer:
-Standardize numerical features (First Half, Second Half).
-One-hot encode the categorical feature (Gender).
+a)Load the dataset and drop rows with missing values.
+b)Extract relevant features (First Half, Second Half, Gender) and the target variable (Age).
+c)Apply transformations using ColumnTransformer:
+d)Standardize numerical features (First Half, Second Half).
+e)One-hot encode the categorical feature (Gender).
 
 
 2. Train-Test Split
@@ -39,25 +39,25 @@ Split the data into training and test sets (80% training, 20% testing).
 
 4. Model Training
 Define a set of models and their hyperparameters for tuning:
-Ridge Regression
-Lasso Regression
-Random Forest Regressor
-Gradient Boosting Regressor
-XGBoost Regressor
-Performing grid search cross-validation to find the best hyperparameters for each model based on Mean Absolute Error (MAE).
+Ridge Regression ,
+Lasso Regression ,  
+Random Forest Regressor ,
+Gradient Boosting Regressor ,
+XGBoost Regressor ,
+Performing grid search cross-validation to find the best hyperparameters for each model based on Mean Absolute Error (MAE) .
 Selecting the best model based on the lowest MAE.
 
 
 
 5. Model Evaluation
-Training the best model on the entire training set.
-Making predictions on the test set.
-Calculating and print the evaluation metrics:
-Mean Absolute Error (MAE)
-Mean Squared Error (MSE)
-Root Mean Squared Error (RMSE)
-R-squared (R²)
-R-squared as a percentage
+a)Training the best model on the entire training set.
+b)Making predictions on the test set.
+c)Calculating and print the evaluation metrics:
+d)Mean Absolute Error (MAE)
+e)Mean Squared Error (MSE)
+f)Root Mean Squared Error (RMSE)
+g)R-squared (R²)
+h)R-squared as a percentage
 
 
 
