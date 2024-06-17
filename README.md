@@ -14,8 +14,8 @@ AthletesAge.ipynb: The main script for data preprocessing, model training, and e
 
 
 Libraries Used
-pandas
-scikit-learn
+pandas,
+scikit-learn,
 xgboost
 
 
